@@ -7,11 +7,11 @@ const Navbar = () => {
       <div className="flex justify-between items-center w-[90%]">
         <Image
           src="/Artboard38.webp"
-          width={154.6}
-          height={37.3}
+          width={128.825}
+          height={31.08}
           alt="Minima Logo"
         />
-        <div className="flex w-[25%] justify-between">
+        <div className="flex font-light w-[25%] justify-between">
           <p>Proyectos</p>
           <p>Contacto</p>
           <p>Nosotros</p>
