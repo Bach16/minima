@@ -96,7 +96,7 @@ export default function Home() {
               QUE NECESITAS
             </h1>
           </div>
-          <div className="absolute bottom-[2rem] sm:right-[4rem] sm:bottom-[10rem]">
+          <div className=" mt-[2rem] sm:mt-0 sm:absolute sm:right-[4rem] sm:bottom-[10rem]">
             <CAText />
           </div>
         </div>
