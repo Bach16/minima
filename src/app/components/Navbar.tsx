@@ -2,7 +2,6 @@ import Image from "next/image";
 import React, { FC } from "react";
 import { IoIosMenu } from "react-icons/io";
 
-
 const Navbar = () => {
   return (
     <nav className="flex h-[5rem] justify-center">
@@ -18,9 +17,9 @@ const Navbar = () => {
           <p>Contacto</p>
           <p>Nosotros</p>
         </div>
-        <div className="flex sm:hidden">
-        <IoIosMenu />
-        </div>
+        <button className="flex sm:hidden">
+          <IoIosMenu className="w-[2rem] h-[2rem]" />
+        </button>
       </div>
     </nav>
   );
