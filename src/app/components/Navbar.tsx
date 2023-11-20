@@ -1,5 +1,7 @@
 import Image from "next/image";
-import React from "react";
+import React, { FC } from "react";
+import { IoIosMenu } from "react-icons/io";
+
 
 const Navbar = () => {
   return (
@@ -11,10 +13,13 @@ const Navbar = () => {
           height={31.08}
           alt="Minima Logo"
         />
-        <div className="flex font-light w-[25%] justify-between">
+        <div className=" hidden sm:flex font-light w-[25%] justify-between">
           <p>Proyectos</p>
           <p>Contacto</p>
           <p>Nosotros</p>
+        </div>
+        <div className="flex sm:hidden">
+        <IoIosMenu />
         </div>
       </div>
     </nav>
