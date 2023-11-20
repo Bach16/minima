@@ -1,5 +1,4 @@
-import React from "react";
-import { BsArrowDownRight } from "react-icons/bs";
+import { CAButton } from ".";
 
 const CAText = () => {
   return (
@@ -10,9 +9,10 @@ const CAText = () => {
         apasiona te emociona, es tu mundo Telemundo un mundo de emoción es
         Telemundo
       </p>
-      <button className="flex items-center justify-between w-[15rem] border-white border-solid border-[1px] h-[2.5rem] px-3">
-        Mira nuestros proyectos <BsArrowDownRight />
-      </button>
+      <div className="w-[15rem]">
+
+      <CAButton content="Mira nuestros proyectos"/>
+      </div>
     </div>
   );
 };
