@@ -107,9 +107,8 @@ export default function Home() {
               Diseños creados a la medida de tu negocio
             </h2>
             <p className="sm:w-[45%] w-[80%] text-[0.8rem] sm:text-[1rem]   text-center">
-              Unlock your potential with a Futur Membership and get the
-              community, coaching, and content your business needs to grow and
-              thrive.
+              Unlock your potential with a Membership and get the community,
+              coaching, and content your business needs to grow and thrive.
             </p>
           </div>
         </div>
