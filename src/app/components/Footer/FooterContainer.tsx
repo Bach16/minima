@@ -19,7 +19,7 @@ const FooterContainer = () => {
         <div
           className={`flex flex-col justify-center items-center font-bold leading-[7rem] text-[7rem] ${anton.className} text-[#000000]`}
         >
-          <p>LET'S TALK</p>
+          <p>LET{"'"}S TALK</p>
           <p>ABOUT THE NEXT</p>
           <p>BIG THING</p>
         </div>
