@@ -25,11 +25,7 @@ import Lenis from "@studio-freight/lenis";
 import { useScroll, useTransform, motion } from "framer-motion";
 import useDimension from "../assets/useDimension";
 
-const oswald = Oswald({
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["700"],
-});
+
 const anton = Anton({
   subsets: ["latin"],
   display: "swap",
@@ -41,7 +37,7 @@ const Alumni = Alumni_Sans({
   weight: ["700"],
 });
 const images = ["/CCLP.png", "/DulcinaLanding1.png", "/vangSA.png"];
-
+ 
 export default function Home() {
   const cont = useRef(null);
   const { height } = useDimension();
@@ -50,7 +46,6 @@ export default function Home() {
     offset: ["start end", "end start"],
   });
 
-  console.log(height);
 
   const y = useTransform(scrollYProgress, [0.2, 1.2], [0, height * 2]);
   const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 3.3]);
