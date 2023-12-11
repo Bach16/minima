@@ -30,27 +30,27 @@ const FooterContainer = () => {
         <div className="flex justify-center  w-[100%] ">
           <motion.div
             style={{ y, top: "-60%" }}
-            className="h-[100rem] w-[100%] bg-[#000000] relative  z-40"
+            className="h-[75rem] sm:h-[80rem] w-[100%] bg-[#000000] relative  z-40"
           />
         </div>
       </div>
-      <div className="h-[20rem] bg-[#ffffff]" />
+      <div className="h-[5rem] bg-[#ffffff]" />
 
-      <div className="h-screen flex flex-col justify-evenly ">
+      <div className="h-[35rem] sm:h-screen flex flex-col justify-evenly items-center ">
         <div
-          className={`flex flex-col justify-center items-center font-bold leading-[7rem] text-[7rem] ${anton.className} text-[#000000]`}
+          className={`flex flex-col justify-center items-center font-bold sm:leading-[7rem] leading-[3rem] text-[3rem] sm:text-[7rem] ${anton.className} text-[#000000]`}
         >
           <p>LET{"'"}S TALK</p>
           <p>ABOUT THE NEXT</p>
           <p>BIG THING</p>
         </div>
-        <div className="flex w-[100%] h-[7rem] justify-evenly ">
+        <div className="flex w-[90%] sm:w-[100%] flex-col sm:flex-row h-[10rem] sm:h-[7rem] justify-evenly ">
           <ButtonFooter text="Write a message" />
           <ButtonFooter text="Discuss Project" />
         </div>
       </div>
-      <div className="flex h-[40vh] w-[100%]">
-        <div className="flex w-[100%] h-[3.5rem] justify-evenly">
+      <div className="flex h-[25rem] sm:h-[20rem] w-[100%]">
+        <div className="flex flex-col sm:flex-row w-[100%] sm:h-[3.5rem] sm:justify-evenly justify-between items-center">
           <SocialItems
             name="Behance"
             Icon={FaBehance}
@@ -73,8 +73,8 @@ const FooterContainer = () => {
           />
         </div>
       </div>
-      <div className="w-[100%] justify-center h-[4.5rem] flex">
-        <div className="w-[87%] flex">
+      <div className="w-[100%] justify-center h-[7rem] sm:h-[4.5rem] items-center flex">
+        <div className="sm:w-[87%] w-[90%] flex">
           <p className="text-[#000000] font-light text-[0.9rem] ">
             ©2023 Minima Studio, All Rights Reserved
           </p>
