@@ -23,7 +23,7 @@ const Navbar = () => {
           <li>Nosotros</li>
         </ul>
         <button className="flex sm:hidden">
-          <IoIosMenu className="w-[2rem] h-[2rem]" />
+          <p>Contacto</p>
         </button>
       </div>
     </nav>
