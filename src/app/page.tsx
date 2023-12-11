@@ -40,12 +40,13 @@ const images = ["/CCLP.png", "/DulcinaLanding1.png", "/vangSA.png"];
  
 export default function Home() {
   const cont = useRef(null);
-  const { height } = useDimension();
+  const { height,width } = useDimension();
   const { scrollYProgress } = useScroll({
     target: cont,
     offset: ["start end", "end start"],
   });
-
+  console.log(width);
+  
 
   const y = useTransform(scrollYProgress, [0.2, 1.2], [0, height * 2]);
   const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 3.3]);
@@ -70,7 +71,7 @@ export default function Home() {
   return (
     <>
     
-    <main className="h-[300rem]   text-[#ffffff]  bg-no-repeat bg-fixed ">
+    <main className="min-h-[100rem]   text-[#ffffff]  bg-no-repeat bg-fixed ">
       <div className="min-h-screen">
         <Navbar />
         <div className=" flex flex-col pt-[4rem]  h-[100%] items-center justify-center">
@@ -101,7 +102,7 @@ export default function Home() {
             <TextCAContainer />
           </div>
         </div>
-        <div className="w-[100%] h-[30vh]" />
+        <div className="w-[100%] h-[10rem] sm:h-[30vh]" />
         {/*  <div className="h-[95vh] flex flex-col items-center ">
           <div className="h-[30%] relative flex flex-col justify-between items-center z-50">
             <h2 className="sm:w-[55%] w-[90%] text-center font-extrabold sm:leading-[4.5rem] leading-[2rem] text-[2rem] sm:text-[4rem]">
@@ -113,55 +114,60 @@ export default function Home() {
             </p>
           </div>
         </div> */}
-        <div className="flex h-[100vh] sm:h-[200vh] overflow-hidden flex-col sm:flex-row w-[100%]">
+        <div className="flex  h-[20rem] sm:h-[100rem] overflow-hidden flex-col sm:flex-row w-[100%]">
           <div
-            ref={cont}
+            ref={ cont}
             className=" h-[100%] w-[100%]  bg-[#131313] flex gap-[2vw] justify-center "
           >
             <Column
               key={"0"}
               imgs={[images[2], images[1], images[0]]}
-              y={y4}
-              top={"-75%"}
+              y={((width <= 768))? null: y4}
+              top={(width <= 768)? "-30%":"-75%"}
             />
             <Column
               key={"1"}
               imgs={[images[2], images[0], images[1]]}
-              y={y3}
-              top={"-95%"}
+              y={(width <= 768)? null:y3}
+              top={(width <= 768)? "-20%":"-95%"}
             />
             <Column
               key={"2"}
               imgs={[images[2], images[1], images[0]]}
-              y={y4}
-              top={"-75%"}
+              y={(width <= 768)? null:y4}
+              top={(width <= 768)? "-10%":"-75%"}
             />
           </div>
         </div>
-        <div className="sm:flex justify-center items-center w-[100%] sm:h-[90vh]">
-          <div className=" flex w-[90%] h-[55%]">
-            <div className=" flex justify-start items-start w-[50%] h-[100%]">
-              <p className="text-[#ffffff] font-semibold text-[1.2rem]">
+        <div className="w-[100%] h-[6rem] sm:h-[0vh]" />
+
+        <div className="flex justify-center items-center w-[100%] sm:h-[90vh]">
+          <div className=" flex w-[100%] relative sm:w-[90%] h-[55%] flex-col items-center sm:flex-row overflow-hidden sm:overflow-visible">
+            <div className=" flex justify-center sm:static absolute items-center sm:justify-start sm:items-start w-[100%] sm:w-[50%] h-[100%]">
+              <p className="text-[#ffffff]  font-bold sm:font-semibold text-[1.8rem] sm:text-[1.2rem]">
                 Featured Projects
               </p>
             </div>
             <div
-              className={`flex flex-col relative top-[0rem] left-[5.5rem] font-black text-[#ffffff] text-[9rem] leading-[8.5rem]  ${anton.className}`}
+              className={`flex flex-col items-center sm:relative top-[0rem] left-[5.5rem] font-black text-[#DEDEDE] sm:text-[#ffffff] text-[6.2rem] sm:text-[9rem] leading-[6rem] sm:leading-[8.5rem] ${anton.className}`}
             >
               <p
                 style={{
                   WebkitTextFillColor: "transparent",
-                  WebkitTextStrokeWidth: "0.6px",
+                  WebkitTextStrokeWidth:(width <= 768)? "0.3px":"0.6px",
                 }}
                 className={``}
               >
                 PROJECTS
               </p>
-              <p className="">PROJECTS</p>
+              <p style={(width <= 768)? {
+                  WebkitTextFillColor: "transparent",
+                  WebkitTextStrokeWidth: "0.3px",
+                }:undefined} className="">PROJECTS</p>
               <p
                 style={{
                   WebkitTextFillColor: "transparent",
-                  WebkitTextStrokeWidth: "0.6px",
+                  WebkitTextStrokeWidth: (width <= 768)? "0.3px": "0.6px",
                 }}
                 className=""
               >
@@ -170,9 +176,12 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="w-[100%] h-[6rem] sm:h-[0vh]" />
+
         
         <WideProjects image={images[1]} index={"01"} title="Dulcina" />
         <WideProjects image={images[0]} index={"02"} title="Casual Couture" justify="rigth"/>
+        <WideProjects image={images[1]} index={"01"} title="Dulcina" />
         
         
       </div>
