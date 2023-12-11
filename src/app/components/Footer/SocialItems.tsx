@@ -8,7 +8,7 @@ interface Props {
 
 const SocialItems: FC<Props> = ({ name, Icon, nickname }) => {
   return (
-    <div className=" flex justify-between items-center border-solid border-black border-t h-[5rem] w-[16.5%]">
+    <div className=" flex justify-between items-center border-solid border-black border-t h-[5rem] w-[90%] sm:w-[16.5%]">
       <div className="text-[#000000]">
         <p className=" font-semibold text-[1.2rem]">{name}</p>
         <p className=" font-light">{nickname}</p>
