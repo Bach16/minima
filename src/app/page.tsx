@@ -98,7 +98,7 @@ export default function Home() {
               QUE NECESITAS
             </h1>
           </div>
-          <div className=" mt-[2rem] sm:mt-0 sm:absolute sm:right-[4rem] sm:bottom-[10rem]">
+          <div className=" mt-[2rem] flex w-[90%] sm:w-[auto] sm:mt-0 sm:absolute sm:right-[4rem] sm:bottom-[10rem]">
             <TextCAContainer />
           </div>
         </div>
@@ -154,7 +154,7 @@ export default function Home() {
               <p
                 style={{
                   WebkitTextFillColor: "transparent",
-                  WebkitTextStrokeWidth:(width <= 768)? "0.3px":"0.6px",
+                  WebkitTextStrokeWidth:(width <= 768)? "0.6px":"0.6px",
                 }}
                 className={``}
               >
@@ -162,12 +162,12 @@ export default function Home() {
               </p>
               <p style={(width <= 768)? {
                   WebkitTextFillColor: "transparent",
-                  WebkitTextStrokeWidth: "0.3px",
+                  WebkitTextStrokeWidth: "0.6px",
                 }:undefined} className="">PROJECTS</p>
               <p
                 style={{
                   WebkitTextFillColor: "transparent",
-                  WebkitTextStrokeWidth: (width <= 768)? "0.3px": "0.6px",
+                  WebkitTextStrokeWidth: (width <= 768)? "0.6px": "0.6px",
                 }}
                 className=""
               >
