@@ -16,27 +16,37 @@ const anton = Anton({
 
 const FooterContainer = () => {
   const cont = useRef(null);
-  const { height } = useDimension();
+  const { height,width } = useDimension();
+
+  console.log(height);
+  
 
   const { scrollYProgress } = useScroll({
     target: cont,
     offset: ["start end", "end"],
   });
-  const y = useTransform(scrollYProgress, [0, 1], [0, height * -1]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, height * -1.5]);
 
   return (
-    <footer ref={cont} className="min-h-screen bg-[#ffffff]  overflow-hidden">
-      <div className="flex justify-center  w-[100%] absolute max-h-[71.688rem] overflow-hidden">
+    <footer ref={cont} className="min-h-[60rem] bg-[#ffffff]  overflow-hidden">
+      <div className="flex justify-center  w-[100%] absolute max-h-[50rem] overflow-hidden">
         <div className="flex justify-center  w-[100%] ">
           <motion.div
-            style={{ y, top: "-60%" }}
-            className="h-[75rem] sm:h-[80rem] w-[100%] bg-[#000000] relative  z-40"
+            style={{ y,  top:`-${height/2}px` }}
+            className={`h-[170vh] sm:h-[80rem] w-[100%] bg-[#000000] relative z-0 overflow-hidden`}
           />
         </div>
       </div>
-      <div className="h-[5rem] bg-[#ffffff]" />
-
-      <div className="h-[35rem] sm:h-screen flex flex-col justify-evenly items-center ">
+      <div className="h-[20rem]  ">
+        <div
+          className={`flex flex-col  items-center font-bold sm:leading-[7rem] leading-[3rem] text-[3rem] sm:text-[7rem] ${anton.className} text-[#fff] relative top-[6.65rem] z-40`}
+        >
+{/*           <p>LET{"'"}S TALK</p>           
+ */}          <p>READY FOR A</p>
+          <p>DIGITAL LEAP?</p>
+        </div>
+      </div>
+      <div className="h-[35rem] sm:h-[60rem] flex flex-col justify-evenly items-center relative">
         <div
           className={`flex flex-col justify-center items-center font-bold sm:leading-[7rem] leading-[3rem] text-[3rem] sm:text-[7rem] ${anton.className} text-[#000000]`}
         >
