@@ -7,11 +7,12 @@ interface Props {
     index:string
     title:string
     justify?:string
+    mb?:boolean
 }
 
-const WideProjects: FC<Props> = ({image,index,title,justify}) => {
+const WideProjects: FC<Props> = ({image,index,title,justify,mb}) => {
   return (
-    <div className="h-[20rem] w-[100%] flex justify-center items-center mb-[7rem] sm:mb-[20rem] ">
+    <div className={`h-[20rem] w-[100%] flex justify-center items-center  ${mb==true ? "mb-[7rem] sm:mb-[20rem]":"" } `}>
       <div className={` ${justify=="rigth"?"sm:flex-row-reverse":"sm:flex-row"} h-[100%] w-[90%] flex justify-center flex-col`}>
         <Card image={image} />
         <div className="w-[15%]" />
