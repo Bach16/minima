@@ -71,7 +71,7 @@ export default function Home() {
   return (
     <>
     
-    <main className="min-h-[100rem]   text-[#ffffff]  bg-no-repeat bg-fixed ">
+    <main className="min-h-[90rem]   text-[#ffffff]  bg-no-repeat bg-fixed ">
       <div className="min-h-screen">
         <Navbar />
         <div className=" flex flex-col pt-[4rem]  h-[100%] items-center justify-center">
@@ -179,9 +179,9 @@ export default function Home() {
         <div className="w-[100%] h-[6rem] sm:h-[0vh]" />
 
         
-        <WideProjects image={images[1]} index={"01"} title="Dulcina" />
-        <WideProjects image={images[0]} index={"02"} title="Casual Couture" justify="rigth"/>
-        <WideProjects image={images[1]} index={"01"} title="Dulcina" />
+        <WideProjects image={images[1]} index={"01"} title="Dulcina" mb/>
+        <WideProjects image={images[0]} index={"02"} title="Casual Couture" justify="rigth" mb={true}/>
+        <WideProjects image={images[1]} index={"01"} title="Dulcina" mb={false}/>
         
         
       </div>
