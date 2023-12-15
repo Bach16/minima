@@ -28,7 +28,7 @@ const FooterContainer = () => {
   const y = useTransform(scrollYProgress, [0, 1], [0, height * -1.5]);
 
   return (
-    <footer ref={cont} className="min-h-[60rem] bg-[#ffffff]  overflow-hidden">
+    <footer ref={cont} className="min-h-[50rem] bg-[#ffffff]  overflow-hidden mt-[10rem]">
       <div className="flex justify-center  w-[100%] absolute max-h-[50rem] overflow-hidden">
         <div className="flex justify-center  w-[100%] ">
           <motion.div
@@ -59,7 +59,7 @@ const FooterContainer = () => {
           <ButtonFooter text="Discuss Project" />
         </div>
       </div>
-      <div className="flex h-[25rem] sm:h-[20rem] w-[100%]">
+      <div className="flex h-[25rem] sm:h-[10rem] w-[100%]">
         <div className="flex flex-col sm:flex-row w-[100%] sm:h-[3.5rem] sm:justify-evenly justify-between items-center">
           <SocialItems
             name="Behance"
@@ -83,7 +83,7 @@ const FooterContainer = () => {
           />
         </div>
       </div>
-      <div className="w-[100%] justify-center h-[7rem] sm:h-[4.5rem] items-center flex">
+      <div className="w-[100%] justify-center h-[7rem] sm:h-[4rem] items-center flex">
         <div className="sm:w-[87%] w-[90%] flex">
           <p className="text-[#000000] font-light text-[0.9rem] ">
             ©2023 Minima Studio, All Rights Reserved
