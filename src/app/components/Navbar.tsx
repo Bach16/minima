@@ -17,13 +17,15 @@ const Navbar = () => {
         </Link>
         <ul className=" hidden sm:flex font-light w-[25%] justify-between">
           <Link href={"/projects"}>
-            <li>Proyectos</li>
+            <li>Projects</li>
           </Link>
-          <li>Contacto</li>
-          <li>Nosotros</li>
+          <li>Contact</li>
+          <Link href={"/about"}>
+            <li>About us</li>
+          </Link>
         </ul>
         <button className="flex sm:hidden">
-          <p>Contacto</p>
+          <p>Contact</p>
         </button>
       </div>
     </nav>
