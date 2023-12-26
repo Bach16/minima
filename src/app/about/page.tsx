@@ -1,8 +1,19 @@
 "use client";
-import { FooterContainer, Navbar, SimpleProjectContainer } from "../components";
+import {
+  AccordionI,
+  FooterContainer,
+  Navbar,
+  SimpleProjectContainer,
+} from "../components";
 import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
 import { Anton } from "next/font/google";
+
+import { Accordion } from "@chakra-ui/react";
+
+import firsticon from "../../assets/icons/system-regular-160-trending-up.json";
+import thirdicon from "../../assets/icons/system-regular-720-spinner-half-circles.json";
+import secondicon from "../../assets/icons/system-regular-733-spinner-turbine.json";
 
 const images = ["/CCLP.png", "/DulcinaLanding1.png", "/vangSA.png"];
 
@@ -43,14 +54,14 @@ const ProjectsPage = () => {
             </div>
           </div>
           <div className="flex w-[100%] justify-center">
-            <div className="flex w-[90%]">
-              <div className="flex h-[100%] justify-start">
-                <div className="flex flex-col justify-between h-[90%]">
-                  <div>
+            <div className="flex w-[90%] justify-between">
+              <div className="flex h-[100%] justify-start w-[35%]">
+                <div className="flex flex-col justify-between h-[20rem]">
+                  <div className="font-bold text-[2rem] leading-[2rem]">
                     <h4>OUR</h4>
                     <h4>SERVICES</h4>
                   </div>
-                  <p>
+                  <p className=" font-light">
                     FROM DIGITAL STRATEGY, INTERACTIVE DESIGN AND FULL-STACK
                     DEVELOPMENT, OUR COMPLETE RANGE OF EXPERTISE MAKES US KEY
                     PLAYERS IN IMPLEMENTING DIGITAL SOLUTIONS FOR SMALL TO
@@ -58,7 +69,32 @@ const ProjectsPage = () => {
                   </p>
                 </div>
               </div>
-              <div>
+              <div className="w-[50%]">
+                <div className="w-[100%]">
+                  <Accordion allowToggle className="w-[100%]">
+                    <AccordionI
+                      icon={thirdicon}
+                      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua."
+                      title="TECHNOLOGY"
+                    />
+                    <AccordionI
+                      icon={secondicon}
+                      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                      title="DESIGN"
+                    />
+                    <AccordionI
+                      icon={firsticon}
+                      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                      title="PERFORMANCE"
+                    />
+                  </Accordion>
+                </div>
                 {/* filas */}
               </div>
             </div>
