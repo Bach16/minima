@@ -19,9 +19,9 @@ const AccordionI: FC<Props> = ({ icon, title, content }) => {
     <>
       <AccordionItem className="border-b-[1px] border-white border-solid">
           <AccordionButton className="flex justify-between items-center h-[7rem]">
-            <Box as="span" textAlign="left" className="flex ">
+            <Box as="span" textAlign="left" className="flex items-center ">
               <Lottie className="w-[3rem] h-[3rem] mr-[2rem]" animationData={icon} />
-              <h3 className=" font-normal text-[2rem]"> {title}</h3>
+              <h3 className=" font-normal text-[1.2rem] sm:text-[2rem]"> {title}</h3>
             </Box>
             <AccordionIcon boxSize={50} />
           </AccordionButton>

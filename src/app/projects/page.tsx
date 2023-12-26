@@ -34,11 +34,13 @@ const ProjectsPage = () => {
             >
               PROJECTS
             </h2>
-            <div className=" font-light text-[3rem] sm:leading-[3.5rem] sm:text-[2.6rem] w-[90%] text-center">
+            <div className=" font-light text-[1.2rem] sm:leading-[3.5rem] sm:text-[2.6rem] w-[90%] text-center">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam.
+                At our web development agency, we take pride in crafting
+                tailor-made solutions. This collaborative approach empowers us to deliver
+                projects that are not just visually stunning and technologically
+                advanced but, more importantly, strategically aligned with our
+                client{"'"}s goals.
               </p>
             </div>
           </div>

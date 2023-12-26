@@ -39,37 +39,38 @@ const ProjectsPage = () => {
       <main className="min-h-[100rem]   text-[#ffffff]  bg-no-repeat bg-fixed ">
         <div className="min-h-[70rem]">
           <Navbar />
-          <div className="flex flex-col justify-around items-center h-[50rem] mb-[10rem]">
+          <div className="flex flex-col justify-around items-center h-[30rem] sm:h-[50rem] mb-[10rem]">
             <h2
               className={`font-bold text-[3rem] sm:text-[16rem] ${anton.className} text-[#fff] `}
             >
               ABOUT US
             </h2>
-            <div className=" font-light text-[3rem] sm:leading-[3.5rem] sm:text-[2.6rem] w-[90%] text-center">
+            <div className=" font-light text-[1.2rem] sm:leading-[3.5rem] sm:text-[2.6rem] w-[90%] text-center">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam.
+                Driven by teamwork, digital solutions & the people that use
+                them. We are a digital creative agency that focuses on the
+                results, design and development of digital products for great
+                people.
               </p>
             </div>
           </div>
           <div className="flex w-[100%] justify-center">
-            <div className="flex w-[90%] justify-between">
-              <div className="flex h-[100%] justify-start w-[35%]">
+            <div className="flex sm:flex-row flex-col w-[90%] justify-between">
+              <div className="flex h-[100%] justify-start w-[100%] sm:w-[30%]">
                 <div className="flex flex-col justify-between h-[20rem]">
                   <div className="font-bold text-[2rem] leading-[2rem]">
                     <h4>OUR</h4>
                     <h4>SERVICES</h4>
                   </div>
-                  <p className=" font-light">
-                    FROM DIGITAL STRATEGY, INTERACTIVE DESIGN AND FULL-STACK
-                    DEVELOPMENT, OUR COMPLETE RANGE OF EXPERTISE MAKES US KEY
-                    PLAYERS IN IMPLEMENTING DIGITAL SOLUTIONS FOR SMALL TO
-                    LARGE-SCALE WEB PROJECTS.
+                  <p className=" font-light text-[0.9rem]">
+                    AT MINIMA, CREATIVITY IS WHAT DRIVES THE AGENCY. IT MANIFESTS
+                    ITSELF THROUGH OUR MANAGEMENT APPROACH, CREATION PROCESS AND
+                    TECHNOLOGICAL DEVELOPMENT. THIS IS WHY EACH WEB PROJECT IS
+                    UINIQUE, JUST LIKE YOU.
                   </p>
                 </div>
               </div>
-              <div className="w-[50%]">
+              <div className="w-[100%] sm:w-[50%]">
                 <div className="w-[100%]">
                   <Accordion allowToggle className="w-[100%]">
                     <AccordionI
