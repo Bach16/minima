@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { ButtonFooter, SocialItems } from ".";
 import { Anton } from "next/font/google";
 import { FiInstagram } from "react-icons/fi";
@@ -18,6 +18,16 @@ const anton = Anton({
 const FooterContainer = () => {
   const cont = useRef(null);
   const { height, width } = useDimension();
+
+useEffect(() => {
+    const head = document.querySelector("head");
+    const script = document.createElement("script");
+    script.setAttribute(
+      "src",
+      "https://assets.calendly.com/assets/external/widget.js"
+    );
+    head?.appendChild(script);
+  }, []);
 
   const { scrollYProgress } = useScroll({
     target: cont,
