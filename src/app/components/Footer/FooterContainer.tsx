@@ -19,8 +19,6 @@ const FooterContainer = () => {
   const cont = useRef(null);
   const { height, width } = useDimension();
 
-  console.log(document.getElementById("root"));
-
   const { scrollYProgress } = useScroll({
     target: cont,
     offset: ["start end", "end"],
@@ -64,7 +62,6 @@ const FooterContainer = () => {
           <PopupButton
             className="bg-[#ffffff] border-[1px] text-[1.1rem] w-[100%] h-[40%] sm:h-[100%] sm:w-[40%] border-[#000000] border-solid flex items-center justify-center font-semibold text-[#000000]"
             url="https://calendly.com/minima-studiooo"
-            rootElement={document.getElementById("root")}
             text="Discuss Project"
           />
         </div>
