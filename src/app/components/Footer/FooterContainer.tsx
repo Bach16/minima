@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { ButtonFooter, SocialItems } from ".";
 import { Anton } from "next/font/google";
 import { FiInstagram } from "react-icons/fi";
@@ -8,6 +8,7 @@ import { FaDribbble } from "react-icons/fa";
 import { motion, useScroll, useTransform } from "framer-motion";
 import useDimension from "@/assets/useDimension";
 import { InlineWidget, PopupButton } from "react-calendly";
+import { createPortal } from "react-dom";
 
 const anton = Anton({
   subsets: ["latin"],
@@ -19,15 +20,6 @@ const FooterContainer = () => {
   const cont = useRef(null);
   const { height, width } = useDimension();
 
-useEffect(() => {
-    const head = document.querySelector("head");
-    const script = document.createElement("script");
-    script.setAttribute(
-      "src",
-      "https://assets.calendly.com/assets/external/widget.js"
-    );
-    head?.appendChild(script);
-  }, []);
 
   const { scrollYProgress } = useScroll({
     target: cont,
@@ -39,7 +31,6 @@ useEffect(() => {
     <footer
       ref={cont}
       className="min-h-[50rem] bg-[#ffffff]  overflow-hidden mt-[10rem]"
-      id="root"
     >
       <div className="flex justify-center  w-[100%] absolute max-h-[50rem] overflow-hidden">
         <div className="flex justify-center  w-[100%] ">
@@ -69,11 +60,12 @@ useEffect(() => {
         </div>
         <div className="flex w-[90%] sm:w-[100%] flex-col sm:flex-row h-[10rem] sm:h-[7rem] justify-evenly ">
           <ButtonFooter text="Write a message" />
-          <PopupButton
-            className="bg-[#ffffff] border-[1px] text-[1.1rem] w-[100%] h-[40%] sm:h-[100%] sm:w-[40%] border-[#000000] border-solid flex items-center justify-center font-semibold text-[#000000]"
-            url="https://calendly.com/minima-studiooo"
-            text="Discuss Project"
-          />
+            <PopupButton
+              rootElement={document.body}
+              className="bg-[#ffffff] border-[1px] text-[1.1rem] w-[100%] h-[40%] sm:h-[100%] sm:w-[40%] border-[#000000] border-solid flex items-center justify-center font-semibold text-[#000000]"
+              url="https://calendly.com/minima-studiooo"
+              text="Discuss Project"
+            />
         </div>
       </div>
       <div className="flex h-[25rem] sm:h-[10rem] w-[100%]">
