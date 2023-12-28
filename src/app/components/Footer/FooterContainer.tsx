@@ -7,6 +7,7 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { FaDribbble } from "react-icons/fa";
 import { motion, useScroll, useTransform } from "framer-motion";
 import useDimension from "@/assets/useDimension";
+import { InlineWidget, PopupButton } from "react-calendly";
 
 const anton = Anton({
   subsets: ["latin"],
@@ -16,10 +17,9 @@ const anton = Anton({
 
 const FooterContainer = () => {
   const cont = useRef(null);
-  const { height,width } = useDimension();
+  const { height, width } = useDimension();
 
-  console.log(height);
-  
+  console.log(document.getElementById("root"));
 
   const { scrollYProgress } = useScroll({
     target: cont,
@@ -28,11 +28,15 @@ const FooterContainer = () => {
   const y = useTransform(scrollYProgress, [0, 1], [0, height * -1.5]);
 
   return (
-    <footer ref={cont} className="min-h-[50rem] bg-[#ffffff]  overflow-hidden mt-[10rem]">
+    <footer
+      ref={cont}
+      className="min-h-[50rem] bg-[#ffffff]  overflow-hidden mt-[10rem]"
+      id="root"
+    >
       <div className="flex justify-center  w-[100%] absolute max-h-[50rem] overflow-hidden">
         <div className="flex justify-center  w-[100%] ">
           <motion.div
-            style={{ y,  top:`-${height/2}px` }}
+            style={{ y, top: `-${height / 2}px` }}
             className={`h-[170vh] sm:h-[80rem] w-[100%] bg-[#000000] relative z-0 overflow-hidden`}
           />
         </div>
@@ -41,8 +45,9 @@ const FooterContainer = () => {
         <div
           className={`flex flex-col  items-center font-bold sm:leading-[7rem] leading-[3rem] text-[3rem] sm:text-[7rem] ${anton.className} text-[#fff] relative top-[6.65rem] z-40`}
         >
-{/*           <p>LET{"'"}S TALK</p>           
- */}          <p>READY FOR A</p>
+          {/*           <p>LET{"'"}S TALK</p>
+           */}{" "}
+          <p>READY FOR A</p>
           <p>DIGITAL LEAP?</p>
         </div>
       </div>
@@ -56,7 +61,12 @@ const FooterContainer = () => {
         </div>
         <div className="flex w-[90%] sm:w-[100%] flex-col sm:flex-row h-[10rem] sm:h-[7rem] justify-evenly ">
           <ButtonFooter text="Write a message" />
-          <ButtonFooter text="Discuss Project" />
+          <PopupButton
+            className="bg-[#ffffff] border-[1px] text-[1.1rem] w-[100%] h-[40%] sm:h-[100%] sm:w-[40%] border-[#000000] border-solid flex items-center justify-center font-semibold text-[#000000]"
+            url="https://calendly.com/minima-studiooo"
+            rootElement={document.getElementById("root")}
+            text="Discuss Project"
+          />
         </div>
       </div>
       <div className="flex h-[25rem] sm:h-[10rem] w-[100%]">
