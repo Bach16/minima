@@ -17,7 +17,6 @@
     "framer-motion": "^10.16.16",
     "lord-icon-element": "^4.1.2",
     "lottie-react": "^2.4.0",
-    "lottie-web": "^5.12.2",
     "next": "13.5.6",
     "react": "18",
     "react-calendly": "^4.3.0",

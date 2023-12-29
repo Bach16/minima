@@ -3,17 +3,16 @@ import {
   AccordionI,
   FooterContainer,
   Navbar,
-  SimpleProjectContainer,
 } from "../components";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
 import { Anton } from "next/font/google";
 
 import { Accordion } from "@chakra-ui/react";
 
-import firsticon from "../../assets/icons/system-regular-160-trending-up.json";
-import thirdicon from "../../assets/icons/system-regular-720-spinner-half-circles.json";
-import secondicon from "../../assets/icons/system-regular-733-spinner-turbine.json";
+import { HiOutlineCubeTransparent } from "react-icons/hi2";
+import { TfiStatsUp } from "react-icons/tfi";
+import { CiGlobe } from "react-icons/ci";
 
 const images = ["/CCLP.png", "/DulcinaLanding1.png", "/vangSA.png"];
 
@@ -41,7 +40,7 @@ const ProjectsPage = () => {
           <Navbar />
           <div className="flex flex-col justify-around items-center h-[30rem] sm:h-[50rem] mb-[10rem]">
             <h2
-              className={`font-bold text-[3rem] sm:text-[16rem] ${anton.className} text-[#fff] `}
+              className={`font-bold text-[3rem] sm:text-[16rem] ${anton.className} text-[#ffffff] `}
             >
               ABOUT US
             </h2>
@@ -74,21 +73,21 @@ const ProjectsPage = () => {
                 <div className="w-[100%]">
                   <Accordion allowToggle className="w-[100%]">
                     <AccordionI
-                      icon={thirdicon}
+                      icon={CiGlobe}
                       content="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua."
                       title="TECHNOLOGY"
                     />
                     <AccordionI
-                      icon={secondicon}
+                      icon={HiOutlineCubeTransparent}
                       content="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua.quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                       title="DESIGN"
                     />
                     <AccordionI
-                      icon={firsticon}
+                      icon={TfiStatsUp}
                       content="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua.quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
