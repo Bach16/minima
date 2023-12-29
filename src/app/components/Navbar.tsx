@@ -6,12 +6,12 @@ import { IoIosMenu } from "react-icons/io";
 const Navbar = () => {
   return (
     <nav className="flex h-[5rem] justify-center">
-      <div className="flex justify-between items-center w-[90%]">
+      <div className="flex justify-between items-center w-[90%] text-[0.9rem] sm:text-[1rem]">
         <Link href={"/"}>
           <Image
             src="/Artboard38.webp"
-            width={128.825}
-            height={31.08}
+            width={120.7734375}
+            height={29.1375}
             alt="Minima Logo"
           />
         </Link>

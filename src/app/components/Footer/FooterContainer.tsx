@@ -20,7 +20,6 @@ const FooterContainer = () => {
   const cont = useRef(null);
   const { height, width } = useDimension();
 
-
   const { scrollYProgress } = useScroll({
     target: cont,
     offset: ["start end", "end"],
@@ -60,13 +59,14 @@ const FooterContainer = () => {
         </div>
         <div className="flex w-[90%] sm:w-[100%] flex-col sm:flex-row h-[10rem] sm:h-[7rem] justify-evenly ">
           <ButtonFooter text="Write a message" />
-            <PopupButton
-              rootElement={document.body}
-              className="bg-[#ffffff] border-[1px] text-[1.1rem] w-[100%] h-[40%] sm:h-[100%] sm:w-[40%] border-[#000000] border-solid flex items-center justify-center font-semibold text-[#000000]"
-              url="https://calendly.com/minima-studiooo"
-              text="Discuss Project"
-            />
-        </div>
+          <ButtonFooter text="Discuss Project" />
+{/*           <PopupButton
+            rootElement={document?.body}
+            className="bg-[#ffffff] border-[1px] text-[1.1rem] w-[100%] h-[40%] sm:h-[100%] sm:w-[40%] border-[#000000] border-solid flex items-center justify-center font-semibold text-[#000000]"
+            url="https://calendly.com/minima-studiooo"
+            text="Discuss Project"
+          />
+ */}        </div>
       </div>
       <div className="flex h-[25rem] sm:h-[10rem] w-[100%]">
         <div className="flex flex-col sm:flex-row w-[100%] sm:h-[3.5rem] sm:justify-evenly justify-between items-center">

@@ -3,10 +3,10 @@ import { CAButton, CAText } from ".";
 
 const TextCAContainer = () => {
   return (
-      <div className="flex flex-col justify-between h-[12rem]  ">
+      <div className="flex flex-col justify-between h-[11rem]  ">
         <CAText/>
-        <div className="w-[15rem]">
-          <CAButton content="Mira nuestros proyectos" />
+        <div className="w-[7.5rem]">
+          <CAButton content="Let's talk" />
         </div>
       </div>
   );
