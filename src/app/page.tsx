@@ -2,24 +2,14 @@
 import {
   Alumni_Sans,
   Anton,
-  Barlow_Condensed,
-  Bebas_Neue,
-  Oswald,
 } from "next/font/google";
 import {
-  ButtonFooter,
-  CAButton,
-  CAText,
-  Card,
   Column,
   FooterContainer,
   Navbar,
-  SimpleProjectContainer,
-  SocialItems,
   TextCAContainer,
-  Title,
   WideProjects,
-} from "./components";
+} from "../components";
 import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
 import { useScroll, useTransform, motion } from "framer-motion";
@@ -141,7 +131,7 @@ export default function Home() {
         </div>
         <div className="w-[100%] h-[6rem] sm:h-[0vh]" />
 
-        <div className="flex justify-center items-center w-[100%] sm:h-[90vh]">
+        {/* <div className="flex justify-center items-center w-[100%] sm:h-[90vh]">
           <div className=" flex w-[100%] relative sm:w-[90%] h-[55%] flex-col items-center sm:flex-row overflow-hidden sm:overflow-visible">
             <div className=" flex justify-center sm:static absolute items-center sm:justify-start sm:items-start w-[100%] sm:w-[50%] h-[100%]">
               <p className="text-[#ffffff]  font-bold sm:font-semibold text-[1.8rem] sm:text-[1.2rem]">
@@ -175,15 +165,15 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="w-[100%] h-[6rem] sm:h-[0vh]" />
 
-        
+        {/* 
         <WideProjects image={images[1]} index={"01"} title="Dulcina" mb/>
         <WideProjects image={images[0]} index={"02"} title="Casual Couture" justify="rigth" mb={true}/>
         <WideProjects image={images[1]} index={"01"} title="Dulcina" mb={false}/>
         
-        
+         */}
       </div>
     </main>
     <FooterContainer/>
