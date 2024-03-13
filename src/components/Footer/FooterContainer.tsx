@@ -53,7 +53,7 @@ const FooterContainer = () => {
       </div>
       <div className="h-[35rem] sm:h-[60rem] flex flex-col justify-evenly items-center relative">
         <div
-          className={`flex flex-col justify-center items-center font-bold sm:leading-[7rem] leading-[3rem] text-[3rem] sm:text-[7rem] ${anton.className} text-[#000000]`}
+          className={`flex flex-col text-center justify-center items-center font-bold sm:leading-[7rem] leading-[3rem] text-[3rem] sm:text-[7rem] ${anton.className} text-[#000000]`}
         >
           <p>{t("footer.answer.1")}</p>
           <p>{t("footer.answer.2")}</p>
