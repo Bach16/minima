@@ -1,0 +1,16 @@
+{
+    "first-section": {
+        "heading" : {
+            "1" :"JUST A TAILOR-MADE",
+            "1m" :"JUST A",
+            "2m" :"TAILOR-MADE",
+            "2" :"WEBSITE",
+            "3" :"TO YOUR NEEDS"
+        }
+    },
+    "navbar": {
+        "1": "Projects",
+        "2": "Contact",
+        "3": "About us"
+    }
+}
