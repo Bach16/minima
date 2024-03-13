@@ -9,6 +9,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import useDimension from "@/assets/useDimension";
 import { InlineWidget, PopupButton } from "react-calendly";
 import { createPortal } from "react-dom";
+import { useTranslations } from "next-intl";
 
 const anton = Anton({
   subsets: ["latin"],
@@ -17,6 +18,7 @@ const anton = Anton({
 });
 
 const FooterContainer = () => {
+  const t = useTranslations();
   const cont = useRef(null);
   const { height, width } = useDimension();
 
@@ -45,17 +47,17 @@ const FooterContainer = () => {
         >
           {/*           <p>LET{"'"}S TALK</p>
            */}{" "}
-          <p>READY FOR A</p>
-          <p>DIGITAL LEAP?</p>
+          <p>{t("footer.question.1")}</p>
+          <p>{t("footer.question.2")}</p>
         </div>
       </div>
       <div className="h-[35rem] sm:h-[60rem] flex flex-col justify-evenly items-center relative">
         <div
           className={`flex flex-col justify-center items-center font-bold sm:leading-[7rem] leading-[3rem] text-[3rem] sm:text-[7rem] ${anton.className} text-[#000000]`}
         >
-          <p>LET{"'"}S TALK</p>
-          <p>ABOUT THE NEXT</p>
-          <p>BIG THING</p>
+          <p>{t("footer.answer.1")}</p>
+          <p>{t("footer.answer.2")}</p>
+          <p>{t("footer.answer.3")}</p>
         </div>
         <div className="flex w-[90%] sm:w-[100%] flex-col sm:flex-row h-[10rem] sm:h-[7rem] justify-evenly ">
           <ButtonFooter text="Write a message" />
