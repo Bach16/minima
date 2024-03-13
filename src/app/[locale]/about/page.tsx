@@ -1,5 +1,5 @@
 "use client";
-import { FooterContainer, Navbar, SimpleProjectContainer } from "../../components";
+import { FooterContainer, Navbar, SimpleProjectContainer } from "../../../components";
 import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
 import { Anton } from "next/font/google";
