@@ -1,9 +1,9 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
-import React, { FC } from "react";
-import { IoIosMenu } from "react-icons/io";
 
 const Navbar = () => {
+  const t = useTranslations();
   return (
     <nav className="flex h-[5rem] justify-center">
       <div className="flex justify-between items-center w-[90%]">
@@ -17,15 +17,15 @@ const Navbar = () => {
         </Link>
         <ul className=" hidden sm:flex font-light w-[25%] justify-between">
           <Link href={"/projects"}>
-            <li>Projects</li>
+            <li>{t("navbar.1")}</li>
           </Link>
-          <li>Contact</li>
+            <li>{t("navbar.2")}</li>
           <Link href={"/about"}>
-            <li>About us</li>
+            <li>{t("navbar.3")}</li>
           </Link>
         </ul>
         <button className="flex sm:hidden">
-          <p>Contact</p>
+          <p>{t("navbar.2")}</p>
         </button>
       </div>
     </nav>
