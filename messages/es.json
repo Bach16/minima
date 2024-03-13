@@ -12,5 +12,16 @@
         "1": "Proyectos",
         "2": "Contactanos",
         "3": "Nosotros"
+    },
+    "footer": {
+        "question": {
+            "1":"LISTO PARA UN",
+            "2":"SALTO DIGITAL?"
+        },
+        "answer": {
+            "1":"CUENTANOS",
+            "2":"UN POCO MAS ACERCA",
+            "3":"DE TU PROYECTO"
+        } 
     }
 }
