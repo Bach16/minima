@@ -2,12 +2,12 @@ import { CAButton } from ".";
 
 const CAText = () => {
   return (
-      <p className="w-[100%] sm:w-[26rem] text-[0.8rem] sm:text-[1rem] font-light">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
+    <p className="w-[100%] sm:w-[30rem] text-[0.8rem] sm:text-[1rem] font-light">
+      Transform your vision into a stunning online presence. Unlock the
+      potential of your business with cutting-edge web solutions. Let{"'"}s craft a
+      unique online presence that stands out in the digital landscape. Your
+      journey to success begins here.
+    </p>
   );
 };
 

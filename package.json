@@ -9,14 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@lordicon/element": "^1.4.2",
     "@studio-freight/lenis": "^1.0.27",
-    "framer-motion": "^10.16.4",
+    "framer-motion": "^10.16.16",
+    "lord-icon-element": "^4.1.2",
+    "lottie-react": "^2.4.0",
     "i18next": "^23.10.1",
     "i18next-resources-to-backend": "^1.2.0",
     "next": "13.5.6",
     "next-i18n-router": "^5.3.1",
     "next-intl": "^3.9.4",
     "react": "18",
+    "react-calendly": "^4.3.0",
     "react-dom": "18",
     "react-i18next": "^14.1.0",
     "react-icons": "4.11.0"
