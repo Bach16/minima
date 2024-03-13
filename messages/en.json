@@ -12,5 +12,16 @@
         "1": "Projects",
         "2": "Contact",
         "3": "About us"
+    },
+    "footer": {
+        "question": {
+            "1":"READY FOR A",
+            "2":"DIGITAL LEAP?"
+        },
+        "answer": {
+            "1":"LET'S TALK",
+            "2":"ABOUT THE NEXT",
+            "3":"BIG THING"
+        } 
     }
 }
