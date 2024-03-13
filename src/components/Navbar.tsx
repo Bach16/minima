@@ -1,13 +1,17 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
+import {useTimeZone,useLocale } from "next-intl";
 
 const Navbar = () => {
   const t = useTranslations();
+  const lo = useLocale()
+
+
   return (
     <nav className="flex h-[5rem] justify-center">
       <div className="flex justify-between items-center w-[90%] text-[0.9rem] sm:text-[1rem]">
-        <Link href={"/"}>
+        <Link href={`/${lo}`}>
           <Image
             src="/Artboard38.webp"
             width={120.7734375}
@@ -16,11 +20,11 @@ const Navbar = () => {
           />
         </Link>
         <ul className=" hidden sm:flex font-light w-[25%] justify-between">
-          <Link href={"/projects"}>
+          <Link href={`/${lo}/projects`}>
             <li>{t("navbar.1")}</li>
           </Link>
             <li>{t("navbar.2")}</li>
-          <Link href={"/about"}>
+          <Link href={`/${lo}/about`}>
             <li>{t("navbar.3")}</li>
           </Link>
         </ul>
