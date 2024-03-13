@@ -1,0 +1,16 @@
+{
+    "first-section": {
+        "heading" : {
+            "1" :"NOSOTROS CREAMOS",
+            "1m" :"NOSOTROS",
+            "2m" :"CREAMOS",
+            "2" :"LA PÁGINA",
+            "3" :"QUE NECESITAS"
+        }
+    },
+    "navbar": {
+        "1": "Proyectos",
+        "2": "Contactanos",
+        "3": "Nosotros"
+    }
+}
