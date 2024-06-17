@@ -3,17 +3,18 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import Script from "next/script";
-import image from "../../../public/def.png";
+import image from "../../../public/def.png"
 
 const inter = Inter({ subsets: ["latin"] });
 
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://minima-mauve.vercel.app"),
-  keywords: ["web development", "desarrollo web", "diseño web"],
+  metadataBase:new URL("https://minima-mauve.vercel.app"),
+  keywords:["web development","desarrollo web","diseño web",],
   title: "Minima",
-  openGraph: {
+  openGraph:{
     description: "Minima web studio",
-    images: image.src,
+    images: image.src
   },
   icons: {
     icon: "/favicon.png",

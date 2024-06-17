@@ -33,7 +33,6 @@ export default function Home() {
     target: cont,
     offset: ["start end", "end start"],
   });
-  console.log(width);
 
   const y = useTransform(scrollYProgress, [0.2, 1.2], [0, height * 2]);
   const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 3.3]);
