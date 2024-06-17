@@ -3,12 +3,18 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import Script from "next/script";
+import image from "../../../public/def.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://minima-mauve.vercel.app"),
+  keywords: ["web development", "desarrollo web", "diseño web"],
   title: "Minima",
-  description: "Minima web studio",
+  openGraph: {
+    description: "Minima web studio",
+    images: image.src,
+  },
   icons: {
     icon: "/favicon.png",
   },
@@ -26,6 +32,11 @@ const RootLayout: React.FC<Props> = ({ children, params: { locale } }) => {
   return (
     <html lang={locale}>
       <head>
+<Script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TJD4VVQ5');</Script>
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-R51DX82E18"
@@ -41,6 +52,14 @@ const RootLayout: React.FC<Props> = ({ children, params: { locale } }) => {
         </Script>
       </head>
       <body className={`${inter.className} bg-black max-w-[200rem] h-auto`}>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TJD4VVQ5"
+            height="0"
+            width="0"
+            style="display:none;visibility:hidden"
+          ></iframe>
+        </noscript>
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
