@@ -14,7 +14,7 @@ import { HiOutlineCubeTransparent } from "react-icons/hi2";
 import { TfiStatsUp } from "react-icons/tfi";
 import { CiGlobe } from "react-icons/ci";
 
-const images = ["/CCLP.png", "/DulcinaLanding1.png", "/vangSA.png"];
+const images = ["/CCLP.png", "/DulcinaLanding1.png", "/vangSA.png"]; 
 
 const anton = Anton({
   subsets: ["latin"],
