@@ -13,8 +13,8 @@ const Navbar = () => {
       <div className="flex justify-between items-center w-[90%] text-[0.9rem] sm:text-[1rem]">
         <Link href={`/${lo}`}>
           <Image
-            src="/Artboard38.webp"
-            width={120.7734375}
+            src="/log-d.png"
+            width={190}
             height={29.1375}
             alt="Minima Logo"
           />
