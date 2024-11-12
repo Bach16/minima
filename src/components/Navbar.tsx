@@ -20,10 +20,16 @@ const Navbar = () => {
           />
         </Link>
         <ul className=" hidden sm:flex font-light w-[25%] justify-end">
-            <li>{t("navbar.2")}</li>
+          <li>
+            <Link href={'https://wa.link/o1buwq'}>
+              {t("navbar.2")}
+            </Link>
+          </li>
         </ul>
         <button className="flex sm:hidden">
-          <p>{t("navbar.2")}</p>
+          <Link href={'https://wa.link/o1buwq'}>
+            <p>{t("navbar.2")}</p>
+          </Link>
         </button>
       </div>
     </nav>

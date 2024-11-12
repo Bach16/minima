@@ -10,6 +10,7 @@ import useDimension from "@/assets/useDimension";
 import { InlineWidget, PopupButton } from "react-calendly";
 import { createPortal } from "react-dom";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 const anton = Anton({
   subsets: ["latin"],
@@ -60,15 +61,13 @@ const FooterContainer = () => {
           <p>{t("footer.answer.3")}</p>
         </div>
         <div className="flex w-[90%] sm:w-[100%] flex-col sm:flex-row h-[10rem] sm:h-[7rem] justify-evenly ">
+        <Link className="flex w-[90%] sm:w-[100%] flex-col sm:flex-row h-[10rem] sm:h-[7rem] justify-evenly" href={'https://wa.link/o1buwq'}>
           <ButtonFooter text="Escribenos un mensaje" />
+        </Link>
+        <Link className="flex w-[90%] sm:w-[100%] flex-col sm:flex-row h-[10rem] sm:h-[7rem] justify-evenly" href={'https://wa.link/o1buwq'}>
           <ButtonFooter text="Discutir un proyecto" />
-{/*           <PopupButton
-            rootElement={document?.body}
-            className="bg-[#ffffff] border-[1px] text-[1.1rem] w-[100%] h-[40%] sm:h-[100%] sm:w-[40%] border-[#000000] border-solid flex items-center justify-center font-semibold text-[#000000]"
-            url="https://calendly.com/minima-studiooo"
-            text="Discuss Project"
-          />
- */}        </div>
+        </Link>
+        </div>
       </div>
       <div className="flex h-[25rem] sm:h-[10rem] w-[100%]">
         <div className="flex flex-col sm:flex-row w-[100%] sm:h-[3.5rem] sm:justify-evenly justify-between items-center">
