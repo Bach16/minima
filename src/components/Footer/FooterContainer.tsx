@@ -60,8 +60,8 @@ const FooterContainer = () => {
           <p>{t("footer.answer.3")}</p>
         </div>
         <div className="flex w-[90%] sm:w-[100%] flex-col sm:flex-row h-[10rem] sm:h-[7rem] justify-evenly ">
-          <ButtonFooter text="Write a message" />
-          <ButtonFooter text="Discuss Project" />
+          <ButtonFooter text="Escribenos un mensaje" />
+          <ButtonFooter text="Discutir un proyecto" />
 {/*           <PopupButton
             rootElement={document?.body}
             className="bg-[#ffffff] border-[1px] text-[1.1rem] w-[100%] h-[40%] sm:h-[100%] sm:w-[40%] border-[#000000] border-solid flex items-center justify-center font-semibold text-[#000000]"

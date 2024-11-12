@@ -19,14 +19,8 @@ const Navbar = () => {
             alt="Minima Logo"
           />
         </Link>
-        <ul className=" hidden sm:flex font-light w-[25%] justify-between">
-          <Link href={`/${lo}/projects`}>
-            <li>{t("navbar.1")}</li>
-          </Link>
+        <ul className=" hidden sm:flex font-light w-[25%] justify-end">
             <li>{t("navbar.2")}</li>
-          <Link href={`/${lo}/about`}>
-            <li>{t("navbar.3")}</li>
-          </Link>
         </ul>
         <button className="flex sm:hidden">
           <p>{t("navbar.2")}</p>
