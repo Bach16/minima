@@ -9,6 +9,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import useDimension from "@/assets/useDimension";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { IconType } from 'react-icons';
 
 const anton = Anton({
   subsets: ["latin"],
@@ -16,8 +17,13 @@ const anton = Anton({
   weight: ["400"],
 });
 
-// Define ContactItem component
-const ContactItem = ({ Icon, text }) => {
+interface ContactItemProps {
+  Icon: IconType;
+  text: string;
+}
+
+// Define ContactItem component with types
+const ContactItem: React.FC<ContactItemProps> = ({ Icon, text }) => {
   return (
     <div className="flex items-center gap-2 text-black">
       <Icon size={20} />
@@ -26,9 +32,9 @@ const ContactItem = ({ Icon, text }) => {
   );
 };
 
-const FooterContainer = () => {
+const FooterContainer: React.FC = () => {
   const t = useTranslations();
-  const cont = useRef(null);
+  const cont = useRef<HTMLElement>(null);
   const { height } = useDimension();
 
   const { scrollYProgress } = useScroll({
